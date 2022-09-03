@@ -1,0 +1,117 @@
+{
+    "name": "bspwm",
+    "init": "s6",
+    "base": "lxde",
+    "services": [
+        "acpid",
+        "bluetoothd",
+        "cronie",
+        "cupsd",
+        "syslog-ng",
+        "NetworkManager",
+        "sddm"
+    ],
+    "packages": {
+        "base": {
+            "Packages-Root": {
+                "remove": [],
+                "add": []
+            }
+        },
+        "common": {
+            "Packages-apps": {
+                "remove": [
+                    "powertop",
+                    "inxi"
+                ],
+                "add": []
+            },
+            "Packages-base": {
+                "remove": [
+                    "dhcpcd-@initsys@"
+                ],
+                "add": [
+                    "base-devel"
+                ]
+            },
+            "Packages-xorg": {
+                "remove": [
+                    "artix-gtk-presets",
+                    "artix-qt-presets",
+                    "mpv",
+                    "scrot"
+                ],
+                "add": [
+                    "xorg-xsetroot"
+                ]
+            }
+        },
+        "$name": {
+            "Packages-Live": {
+                "remove": [],
+                "add": [
+                    "sddm-sugar-dark",
+                    "rtl88xxau-aircrack-dkms-git"
+                ]
+            },
+            "Packages-Root": {
+                "remove": "*",
+                "add": [
+                    "ffmpeg",
+                    "bspwm",
+                    "rofi",
+                    "sxhkd",
+                    "slop",
+                    "polybar",
+                    "maim",
+                    "xclip",
+                    "alacritty",
+                    "picom",
+                    "betterlockscreen",
+                    "dunst",
+                    "sddm-sugar-dark",
+                    "qogir-gtk-theme",
+                    "qogir-icon-theme",
+                    "viewnior",
+                    "lxsession",
+                    "pcmanfm-gtk3",
+                    "pavucontrol",
+                    "notify-osd",
+                    "libnotify",
+                    "nitrogen",
+                    "network-manager-applet",
+                    "gnome-keyring",
+                    "engrampa",
+                    "p7zip",
+                    "unrar",
+                    "parcellite",
+                    "volumeicon",
+                    "mictray",
+                    "pamixer",
+                    "playerctl-git",
+                    "visual-studio-code-bin",
+                    "leafpad",
+                    "firefox",
+                    "sddm-sugar-dark",
+                    "rtl88xxau-aircrack-dkms-git",
+                    "discord",
+                    "paru",
+                    "pulseaudio"
+                ]
+            }
+        }
+    },
+    "aur": [
+        "rtl88xxau-aircrack-dkms-git",
+        "sddm-sugar-dark",
+        "qogir-gtk-theme",
+        "qogir-icon-theme",
+        "kvantum-theme-qogir-git",
+        "visual-studio-code-bin",
+        "mictray",
+        "playerctl-git",
+        "paru",
+        "betterlockscreen",
+        "i3lock-color"
+    ]
+}

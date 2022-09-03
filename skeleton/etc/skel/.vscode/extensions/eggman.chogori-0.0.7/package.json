@@ -1,0 +1,89 @@
+{
+	"name": "chogori",
+	"displayName": "Chogori Darkest",
+	"description": "Theme for VSCode, inspired by Qogir and Grueling Hare",
+	"version": "0.0.7",
+	"publisher": "eggman",
+	"author": {
+		"name": "eggman"
+	},
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Chogori Darkest Blue",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-blue-color-theme.json"
+			},
+			{
+				"label": "Chogori Darkest Mint",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-mint-color-theme.json"
+			},
+			{
+				"label": "Chogori Darkest Orange",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-orange-color-theme.json"
+			},
+			{
+				"label": "Chogori Darkest Pink",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-pink-color-theme.json"
+			},
+			{
+				"label": "Chogori Darkest Red",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-red-color-theme.json"
+			},
+			{
+				"label": "Chogori Darkest Yellow",
+				"uiTheme": "vs-dark",
+				"path": "./themes/chogori-darkest-yellow-color-theme.json"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/eggman314/chogori/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eggman314/chogori.git"
+	},
+	"icon": "chogori-logo.png",
+	"galleryBanner": {
+		"color": "#32343d",
+		"theme": "dark"
+	},
+	"keywords": [
+		"theme",
+		"dark",
+		"ubuntu",
+		"manjaro",
+		"numix",
+		"arc",
+		"qogir",
+		"orange",
+		"blue",
+		"red",
+		"mint",
+		"green",
+		"pink",
+		"simple"
+	],
+	"__metadata": {
+		"id": "ffc1e7a6-3431-43b0-8081-355e2edc3b9b",
+		"publisherId": "052a096b-2239-4282-b7ab-4e61e7d11708",
+		"publisherDisplayName": "eggman",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1662050286456
+	}
+}

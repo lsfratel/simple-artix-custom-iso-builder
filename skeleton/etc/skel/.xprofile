@@ -1,0 +1,2 @@
+playerctld daemon &
+betterlockscreen -u /usr/share/backgrounds &

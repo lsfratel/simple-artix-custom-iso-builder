@@ -1,0 +1,6 @@
+* {
+  dark:            #282A33;
+  gray:            #5294E2;
+  light:           #FFFFFF;
+  transparent:     rgba(0, 0, 0, 0);
+}
