@@ -3,6 +3,7 @@
     "init": "s6",
     "base": "lxde",
     "skeleton": "bspwm",
+    "re-build-aur": false,
     "services": [
         "acpid",
         "bluetoothd",

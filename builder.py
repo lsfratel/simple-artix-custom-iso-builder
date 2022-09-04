@@ -153,8 +153,13 @@ def copy_skeleton():
 
 def build_aur_packages():
     gitlink = 'https://aur.archlinux.org/'
+    myrepo_pkgs = str(subprocess.check_output(f'ls {MYREPO_PATH}', shell=True))
 
     for pkg in CONFIG['aur']:
+        if not CONFIG['re-build-aur']:
+            if pkg in myrepo_pkgs:
+                log(f'Skipping {pkg}, already build.')
+                continue
         path = AUR_PACKAGES_PATH.joinpath(pkg)
         if path.exists():
             run_cmd(f'rm -rf {path}'), f'Can\'t remove dir: {path}'
@@ -193,7 +198,7 @@ def start():
     process_packages()
     set_services()
     copy_skeleton()
-    #build_aur_packages()
+    build_aur_packages()
 
     args = f'-p {CONFIG["name"]} -t {ISO_PATH} -i {CONFIG["init"]}'
 
@@ -210,7 +215,6 @@ def start():
 
 
 if __name__ == '__main__':
-
     args = docopt(__doc__)
 
     with open(args['<config_path>'], 'r') as f:
