@@ -51,14 +51,12 @@
         "$name": {
             "Packages-Live": {
                 "remove": [],
-                "add": [
-                    "sddm-sugar-dark",
-                    "rtl88xxau-aircrack-dkms-git"
-                ]
+                "add": []
             },
             "Packages-Root": {
                 "remove": "*",
                 "add": [
+                    "bash-completion",
                     "ffmpeg",
                     "bspwm",
                     "rofi",
@@ -98,7 +96,8 @@
                     "rtl88xxau-aircrack-dkms-git",
                     "discord",
                     "paru",
-                    "pulseaudio"
+                    "pulseaudio",
+                    "asdf-vm"
                 ]
             }
         }
@@ -114,6 +113,7 @@
         "playerctl-git",
         "paru",
         "betterlockscreen",
-        "i3lock-color"
+        "i3lock-color",
+        "asdf-vm"
     ]
 }
