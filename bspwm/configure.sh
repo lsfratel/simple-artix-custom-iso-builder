@@ -47,6 +47,8 @@ Include = /etc/pacman.d/mirrorlist-arch
 #Include = /etc/pacman.d/mirrorlist-arch
 EOF
 
+sed -i '/^load-module module-filter-apply/a .ifexists module-echo-cancel.so\nload-module module-echo-cancel aec_method=webrtc aec_args="analog_gain_control=0 digital_gain_control=0" source_name=echocancel sink_name=echocancel1\nset-default-source echocancel\n.endif' /etc/pulse/default.pa
+
 pacman -Scc --noconfirm
 
 rm archlinux-key*
