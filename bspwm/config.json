@@ -97,7 +97,9 @@
                     "discord",
                     "paru",
                     "pulseaudio",
-                    "asdf-vm"
+                    "asdf-vm",
+                    "kvantum",
+                    "vlc"
                 ]
             }
         }
