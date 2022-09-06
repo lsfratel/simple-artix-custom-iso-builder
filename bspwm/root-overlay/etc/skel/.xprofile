@@ -1,2 +1,23 @@
+# NetworkManager tray
+nm-applet &
+
+# Mic tray
+mictray &
+
+# Clipboard tray
+parcellite &
+
+# Volume tray
+volumeicon &
+
+# Playerctl daemon
 playerctld daemon &
+
+# Lockscreen
 betterlockscreen -u /usr/share/backgrounds &
+
+# Restore wallpaper
+nitrogen --restore &
+
+# Polkit
+/usr/bin/lxpolkit &
